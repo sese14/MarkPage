@@ -22,10 +22,12 @@ let addBookMark = (element) =>{
 
 
     createObject(element)
+    if(validURL(element) == true){
+
     pushLink(element)
     clearInput2()
     counter++
- 
+    } 
 }
 
 let pushLink = (element) =>{
