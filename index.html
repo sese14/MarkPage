@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StartPage</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="https://kit.fontawesome.com/0eb1370423.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="resize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  
+</head>
+<body>
+    
+<section class="wallPaper--activater active"><i onclick="BarDropDown()" class="fas fa-chevron-circle-down animate__pulse"></i></section>
+<section class="wallPaper">
+    <input type="search" class="wallPaper--input" autocomplete="off" onkeypress="if(event.keyCode == '13'){ChangeBagground(this.value)}">
+    <section class="wallPaper--Back"><i onclick="BarGoUp()" class="fas fa-chevron-circle-up"></i></section>
+</section>
+
+
+
+
+
+<article class="screen" id="st" draggable="true">
+    <input type="search" class="screen--input" autocomplete="off" onkeypress="if(event.keyCode == '13'){addBookMark(this.value)}">
+    <section class="screen--trash"><i onclick="ReadyDelete()" class="fas fa-trash"></i></section>
+ 
+</article>
+
+
+
+
+
+
+    <script src="resize.js"></script>
+    <script src="java.js"></script>
+    <script src="screen.js"></script>
+    <script>
+        function init(){
+    ResizeJs.apply('.resizeMe', document.body);
+}
+
+window.addEventListener("load", init);
+    </script>
+</body>
+</html>
